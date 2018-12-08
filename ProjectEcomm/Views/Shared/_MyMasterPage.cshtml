@@ -3,7 +3,7 @@
 <html lang="zxx" class="no-js">
 <head>
 
-
+    @RenderSection("Scripts", required: false)
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -64,7 +64,7 @@
                     <ul class="nav-menu">
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a asp-controller="Home" asp-action="Courses">Courses</a></li>
+                        <li><a asp-controller="Courses" asp-action="Index">Courses</a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li class="menu-has-children">
