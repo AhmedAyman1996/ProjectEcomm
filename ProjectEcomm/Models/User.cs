@@ -31,9 +31,11 @@ namespace ProjectEcomm.Models
         [Display(Name = "Credit Card Holder Name")]
         public string CardHolderName { get; set; }
 
+  
         [Required(ErrorMessage = "You must Enter Your Credit Card Number")]
         [Display(Name = "Credit Card Number")]
         public string CardNo { get; set; }
+
         [Required(ErrorMessage = "You must Enter Your CVV")]
         public string CVV { get; set; }
 

@@ -49,6 +49,8 @@ namespace ProjectEcomm.Controllers
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+         
+
             return View();
         }
 

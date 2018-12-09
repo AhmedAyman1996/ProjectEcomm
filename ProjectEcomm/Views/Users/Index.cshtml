@@ -45,6 +45,7 @@
     </thead>
     <tbody>
 @foreach (var item in Model) {
+    @* Start of loop *@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
@@ -79,6 +80,7 @@
                 <a asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
             </td>
         </tr>
-}
+} 
+        @* End of Loop*@
     </tbody>
 </table>
